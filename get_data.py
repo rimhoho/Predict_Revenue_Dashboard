@@ -20,20 +20,20 @@ def init_browser():
     driver.set_window_size(500, 1280)
     return driver
 
-def sign_in(driver, login_url):
-    driver.get(login_url)
-    user = 'rimhoho@gmail.com'
-    pass_w = 'flaghgh1!'
+# def sign_in(driver, login_url):
+#     driver.get(login_url)
+#     user = 'your ID'
+#     pass_w = 'your PW'
 
-    username = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-username"]')))
-    username.send_keys(user)
-    signin_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-signin"]')))
-    driver.execute_script("arguments[0].();", signin_button)
-    password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-passwd"]')))
-    password.send_keys(pass_w)
-    submit_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-signin"]')))
-    driver.execute_script("arguments[0].();", submit_button)
-    return  
+#     username = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-username"]')))
+#     username.send_keys(user)
+#     signin_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-signin"]')))
+#     driver.execute_script("arguments[0].();", signin_button)
+#     password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-passwd"]')))
+#     password.send_keys(pass_w)
+#     submit_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="login-signin"]')))
+#     driver.execute_script("arguments[0].();", submit_button)
+#     return  
 
 def scrape_revenue_from_yahoo_finance_and_csvFile(driver, each_company, collection):
     # DATASET 1: scrape from yahoo finance
