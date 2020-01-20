@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Visonustics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href= "{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href= "{{ url_for('static', filename='css/grayscale.css') }}">
+  <link rel="stylesheet" href= "{{ url_for('static', filename='css/grayscale.min.css') }}">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href= "{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script>
+  
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  {{dataset.to_html(index=False,classes="table table-striped table-borderless table-hover")|safe}}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/grayscale.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
+
+</body>
+
+</html>
