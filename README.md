@@ -2,6 +2,8 @@
 ### [Veiw on Website](https://visionistics.herokuapp.com/)
 ![demo.png](demo.png)
 
+This app queries MongDB Cients for major communication services's total revenue and other indicators as well as SMI US Ad revenue, ORI, capture rate and stock. You can also see the estimated total Revenue for 2019-Q4.
+
 ## How to run this app
 
 To run this app first clone repository and then open a terminal to the app folder.
