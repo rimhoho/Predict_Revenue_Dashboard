@@ -6,7 +6,7 @@ dash==1.8.0
 dash_daq==0.3.1
 pandas==0.24.2
 selenium==3.141.0
-numpy==1.17.2
+numpy==1.22.0
 chart_studio==1.0.0
 pymongo==3.9.0
 dash_core_components==1.7.0
